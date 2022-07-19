@@ -1,0 +1,40 @@
+# The URL the site will be built for
+base_url = "https://mdtro.github.io"
+title = "matttrostel.com"
+
+theme = "terminimal"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+taxonomies = [
+    {name = "tags"}
+]
+
+
+
+[markdown]
+render_emoji = true
+highlight_code = true
+highlight_theme = "boron"
+
+external_links_target_blank = true
+
+[extra]
+logo_text = "matttrostel.com"
+author = "mdtro"
+accent_color = "orange"
+
+menu_items = [
+    {name = "blog", url = "$BASE_URL"},
+    {name = "tags", url = "$BASE_URL/tags"},
+    {name = "archive", url = "$BASE_URL/archive"},
+    {name = "about me", url = "$BASE_URL/about"},
+    {name = "github", url = "https://github.com/mdtro", newtab = true},
+]
+
+enable_post_view_navigation = true
+post_view_navigation_prompt = "Read more"
